@@ -1,0 +1,19 @@
+{
+  "name": "git-starter-assignment-anastasiia-chepanova",
+  "version": "1.0.0",
+  "description": "## 🤓 Course overview and learning outcomes",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.41.2",
+    "@types/node": "^20.11.20"
+  },
+  "dependencies": {
+    "uuid": "^9.0.1"
+  }
+}
