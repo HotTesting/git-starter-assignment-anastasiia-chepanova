@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test';
-import { v4 as uuidv4 } from 'uuid';
+import { randomUUID } from 'crypto';
 
 type User = {
 	email: string;
@@ -13,7 +13,7 @@ const DASHBOARD_PAGE = 'https://shopdemo-alex-hot.koyeb.app/dashboard';
 
 test('should sign up user', async ({ page }) => {
 	const user: User = {
-		email: `test${uuidv4()}@test.com`,
+		email: `test${randomUUID()}@test.com`,
 		firstName: 'Anastasiia',
 		lastName: 'Chepanova',
 		password: 'qwerty123!',
